@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>FreshRoute Collective - Interactive Decision Artefact</title>
+<style>
+:root{--navy:#17365D;--teal:#2F6B6D;--green:#E2F0D9;--blue:#DCE6F1;--amber:#FFF2CC;--red:#F4CCCC;--ink:#222;--muted:#667085;--line:#D8DEE6;--bg:#F7F9FB}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}
+header{background:linear-gradient(135deg,var(--navy),#214d80);color:white;padding:30px 22px}
+.wrap{max-width:1220px;margin:auto}.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.12em;opacity:.85}.title{font-size:34px;font-weight:800;margin:4px 0 6px}.sub{font-size:16px;opacity:.92}
+nav{position:sticky;top:0;background:white;border-bottom:1px solid var(--line);z-index:5}.navrow{max-width:1220px;margin:auto;display:flex;gap:8px;flex-wrap:wrap;padding:10px 18px}nav a{color:var(--navy);text-decoration:none;font-weight:700;padding:7px 10px;border-radius:8px}nav a:hover{background:var(--blue)}
+main{max-width:1220px;margin:auto;padding:20px}.grid{display:grid;gap:16px}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:850px){.g4,.g2{grid-template-columns:1fr}}
+.card{background:white;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 2px 8px rgba(23,54,93,.06)}.card h2,.card h3{color:var(--navy);margin:0 0 10px}.kpi{font-size:28px;font-weight:800;color:var(--navy)}.label{color:var(--muted);font-size:13px}.tag{display:inline-block;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:700;margin:2px 3px 2px 0}.obs{background:var(--blue);color:var(--navy)}.scenario{background:var(--amber);color:#735b00}.derived{background:var(--green);color:#2d5f34}.pub{background:#EDE7F6;color:#50377a}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:10px;margin-top:12px}.node{border:2px solid var(--teal);border-radius:12px;padding:14px;text-align:center;background:#F4F8F8}.node strong{display:block;color:var(--navy);font-size:17px}.arrow{color:var(--teal);font-size:28px;font-weight:900}.coord{margin:14px 0;background:var(--green);border:2px solid var(--navy);padding:12px;border-radius:12px;text-align:center}.coord strong{color:var(--navy)}
+fieldset{border:0;padding:0;margin:0}.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}@media(max-width:800px){.controls{grid-template-columns:1fr}}label{font-weight:700;color:var(--navy);font-size:13px}input[type=number]{width:100%;padding:10px;border:1px solid #BFC8D4;border-radius:8px;font-size:16px;margin-top:4px}.checks{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px}.checks label{font-weight:600;color:var(--ink)}
+.result{border-radius:12px;padding:15px;margin-top:15px}.go{background:var(--green);border:1px solid #95c59b}.amber{background:var(--amber);border:1px solid #d3b75f}.nogo{background:var(--red);border:1px solid #d79c9c}.big{font-size:24px;font-weight:800;color:var(--navy)}
+table{width:100%;border-collapse:collapse;font-size:14px}th{background:var(--navy);color:white;text-align:left;padding:10px}td{border-bottom:1px solid var(--line);padding:9px;vertical-align:top}.muted{color:var(--muted)}
+.gates{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.gate{border:1px solid var(--line);border-radius:10px;padding:12px;background:white}.gate b{color:var(--navy)}@media(max-width:850px){.gates{grid-template-columns:1fr}}
+footer{max-width:1220px;margin:10px auto 30px;padding:0 20px;color:var(--muted);font-size:12px}
+@media print{nav{display:none}body{background:white}.card{box-shadow:none;break-inside:avoid}header{background:var(--navy)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.wrap,main{max-width:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="eyebrow">7001SOM Route 3 - Business Plan + Artefact</div><div class="title">FreshRoute Collective</div><div class="sub">Interactive decision-support showcase | Hemanth Reddy Annedla | Student ID 16880887</div></div></header>
+<nav><div class="navrow"><a href="#overview">Overview</a><a href="#model">Business model</a><a href="#lab">Scenario lab</a><a href="#route">Route capacity</a><a href="#gates">Pilot gates</a><a href="#evidence">Evidence & assumptions</a></div></nav>
+<main>
+<section id="overview" class="grid g4">
+<div class="card"><div class="label">Coventry FSA screening universe</div><div class="kpi">3,015</div><span class="tag obs">Observed</span><p class="muted">Not a TAM or customer-demand estimate.</p></div>
+<div class="card"><div class="label">Physical customer ceiling</div><div class="kpi">21 SMEs</div><span class="tag derived">Derived</span><p class="muted">Three route-days, 14 SME drops/route, two drops/SME/week.</p></div>
+<div class="card"><div class="label">Threshold scenario</div><div class="kpi">£275/day</div><span class="tag scenario">Scenario</span><p class="muted">Contracted refrigerated 3PL route-day cost used for sensitivity testing.</p></div>
+<div class="card"><div class="label">Price for 10% margin at £275/day</div><div class="kpi">£27.89</div><span class="tag derived">Derived</span><p class="muted">Model output, not validated willingness to pay.</p></div>
+</section>
+
+<section id="model" class="card" style="margin-top:16px"><h2>Business model</h2><p>FreshRoute is a supplier-neutral coordination layer. SMEs continue to order from and pay their suppliers directly. FreshRoute coordinates compatible chilled orders; a contracted refrigerated 3PL carries custody during collection and delivery.</p>
+<div class="coord"><strong>FreshRoute coordination layer</strong><br>cut-off + eligibility • route data • custody records • temperature evidence • exceptions • weekly review</div>
+<div class="flow"><div class="node"><strong>Local / specialist suppliers</strong>Prepare labelled, route-ready orders.</div><div class="arrow">→</div><div class="node"><strong>Contracted refrigerated 3PL</strong>Collects, maintains chilled custody and delivers.</div><div class="arrow">→</div><div class="node"><strong>Independent food SMEs</strong>Receive chilled delivery; retain supplier choice.</div></div>
+<p class="muted"><b>Pilot boundary:</b> FreshRoute does not buy speculative stock, own a fleet or operate a permanent warehouse.</p></section>
+
+<section id="lab" class="card" style="margin-top:16px"><h2>Scenario lab</h2><p>Change the planning assumptions to see how route density, contracted 3PL cost and price affect the decision. The calculator is a scenario tool, not a forecast.</p>
+<fieldset class="controls">
+<div><label>Active SMEs<input id="smes" type="number" min="1" max="60" step="1" value="21"></label></div>
+<div><label>Drops per SME / week<input id="drops" type="number" min="0.5" max="7" step="0.5" value="2"></label></div>
+<div><label>Capacity: SME drops / route-day<input id="cap" type="number" min="4" max="20" step="1" value="14"></label></div>
+<div><label>Contracted 3PL cost / route-day (£)<input id="routecost" type="number" min="100" max="600" step="5" value="275"></label></div>
+<div><label>Delivery fee / drop (£)<input id="dropfee" type="number" min="10" max="60" step="0.5" value="25"></label></div>
+<div><label>Monthly coordination fee / SME (£)<input id="membership" type="number" min="0" max="100" step="1" value="35"></label></div>
+<div><label>Handling cost / drop (£)<input id="handling" type="number" min="0" max="15" step="0.5" value="3"></label></div>
+<div><label>Coordinator hours / week<input id="coordhours" type="number" min="0" max="40" step="1" value="10"></label></div>
+<div><label>Other fixed cost / month (£)<input id="fixed" type="number" min="0" max="3000" step="25" value="475"></label></div>
+</fieldset>
+<div class="checks"><label><input id="quote" type="checkbox"> Actual 3PL quotation obtained</label><label><input id="cluster" type="checkbox"> Qualified route-compatible cluster</label><label><input id="compliance" type="checkbox"> Written compliance position confirmed</label></div>
+<div id="decision" class="result amber"></div>
+<div class="grid g4" style="margin-top:12px">
+<div class="card"><div class="label">Required route-days / week</div><div class="big" id="routedays">3</div></div>
+<div class="card"><div class="label">Monthly revenue</div><div class="big" id="revenue">£0</div></div>
+<div class="card"><div class="label">Monthly EBITDA</div><div class="big" id="ebitda">£0</div></div>
+<div class="card"><div class="label">EBITDA margin</div><div class="big" id="margin">0%</div></div>
+</div></section>
+
+<section id="route" class="card" style="margin-top:16px"><h2>Route-capacity scenarios</h2><table><thead><tr><th>Scenario</th><th>Supplier pickups</th><th>SME drops</th><th>Distance</th><th>Route time</th><th>Payload scenario*</th><th>Decision</th></tr></thead><tbody>
+<tr><td>Low density</td><td>3</td><td>8</td><td>60 km</td><td>4.70 h</td><td>400 kg</td><td>Feasible; high cost/drop</td></tr>
+<tr><td>Base</td><td>4</td><td>12</td><td>80 km</td><td>6.35 h</td><td>600 kg</td><td>Feasible</td></tr>
+<tr><td>Stretch</td><td>4</td><td>14</td><td>90 km</td><td>7.02 h</td><td>700 kg</td><td>Planning ceiling</td></tr>
+<tr><td>High density</td><td>5</td><td>16</td><td>100 km</td><td>8.00 h</td><td>800 kg</td><td>No-go on time</td></tr>
+</tbody></table><p class="muted">*Payload uses a 50 kg/drop planning assumption. Actual order weights and receiving windows remain validation inputs.</p></section>
+
+<section id="gates" class="card" style="margin-top:16px"><h2>Stage-gated implementation</h2><div class="gates">
+<div class="gate"><b>G0 - Validate architecture</b><br>Actual 3PL quote; FBO/registration; custody; insurance; route zone.</div>
+<div class="gate"><b>G1 - Build cluster</b><br>Qualify independence, supplier pattern, chilled flows, weights, windows and price acceptance.</div>
+<div class="gate"><b>G2 - Configure controls</b><br>Contracts, SOPs, temperature/custody records, product eligibility and exception rules.</div>
+<div class="gate"><b>G3 - Controlled pilot</b><br>Capture real times, loads, temperature, OTIF and route cost.</div>
+<div class="gate"><b>G4 - Evaluate</b><br>Replace scenario inputs with actual operating data; target ≥10% EBITDA margin.</div>
+<div class="gate"><b>G5 - Scale</b><br>Scale only after stable compliance, service, retention and operating headroom.</div>
+</div></section>
+
+<section id="evidence" class="card" style="margin-top:16px"><h2>Evidence and assumptions</h2><table><thead><tr><th>Item</th><th>Current value</th><th>Class</th><th>Interpretation</th></tr></thead><tbody>
+<tr><td>Coventry FSA-listed food businesses</td><td>3,015</td><td><span class="tag obs">Observed</span></td><td>Local screening universe only.</td></tr>
+<tr><td>Chilled-food legal maximum</td><td>8°C</td><td><span class="tag pub">Published</span></td><td>Relevant chilled-food regulatory limit.</td></tr>
+<tr><td>FreshRoute operating target</td><td>5°C or below</td><td><span class="tag pub">Published guidance</span></td><td>Pilot control target subject to product-specific requirements.</td></tr>
+<tr><td>Contracted 3PL route-day cost</td><td>£275</td><td><span class="tag scenario">Scenario</span></td><td>Replace with a commercial quotation before pilot launch.</td></tr>
+<tr><td>Physical customer ceiling</td><td>21 SMEs</td><td><span class="tag derived">Derived</span></td><td>Valid only under the current route and frequency assumptions.</td></tr>
+<tr><td>Fee for 15% margin at £275/day</td><td>£29.76/drop</td><td><span class="tag derived">Derived</span></td><td>Model output, not willingness-to-pay evidence.</td></tr>
+</tbody></table></section>
+</main>
+<footer>FreshRoute Collective decision-support showcase. All scenario outputs are conditional on their inputs. This HTML artefact should be read alongside the 7001SOM Route 3 business plan, final Excel decision artefact and research log.</footer>
+<script>
+const $=id=>document.getElementById(id); const money=n=>'£'+n.toLocaleString('en-GB',{minimumFractionDigits:2,maximumFractionDigits:2});
+function recalc(){
+ const smes=+$('smes').value,drops=+$('drops').value,cap=+$('cap').value,routecost=+$('routecost').value,dropfee=+$('dropfee').value,membership=+$('membership').value,handling=+$('handling').value,coord=+$('coordhours').value,fixed=+$('fixed').value;
+ const weeks=52/12, weeklyDrops=smes*drops, routeDays=Math.ceil(weeklyDrops/cap), monthlyDrops=weeklyDrops*weeks, monthlyRouteDays=routeDays*weeks;
+ const revenue=smes*membership+monthlyDrops*dropfee, handleCost=monthlyDrops*handling, routeCost=monthlyRouteDays*routecost, coordCost=coord*weeks*12.71*1.15, ebitda=revenue-handleCost-routeCost-coordCost-fixed, margin=revenue?ebitda/revenue:0;
+ $('routedays').textContent=routeDays; $('revenue').textContent=money(revenue); $('ebitda').textContent=money(ebitda); $('margin').textContent=(margin*100).toFixed(1)+'%';
+ const evidenceReady=$('quote').checked&&$('cluster').checked&&$('compliance').checked; let cls='amber',title='PRE-PILOT VALIDATION',msg='Commercial and compliance inputs are not yet fully validated.';
+ if(ebitda<0){cls='nogo';title='NO-GO / REDESIGN';msg='This configuration produces an operating loss. Change price, route cost, density, handling cost or route frequency before pilot commitment.'}
+ else if(margin<0.10){cls='amber';title='THRESHOLD CASE';msg='The configuration is above break-even but below the 10% internal scale gate. It is not scale-ready.'}
+ else if(!evidenceReady){cls='amber';title='ECONOMICALLY PLAUSIBLE - VALIDATION STILL REQUIRED';msg='The model reaches the internal margin gate, but the 3PL quote, qualified cluster and written compliance position must still be confirmed.'}
+ else{cls='go';title='CONTROLLED PILOT CANDIDATE';msg='The model reaches the internal margin gate and the three core validation checks are marked complete. Proceed only through the defined controlled-pilot gates.'}
+ const box=$('decision'); box.className='result '+cls; box.innerHTML='<div class="big">'+title+'</div><div>'+msg+'</div>';
+}
+document.querySelectorAll('input').forEach(x=>x.addEventListener('input',recalc)); recalc();
+</script>
+</body></html>

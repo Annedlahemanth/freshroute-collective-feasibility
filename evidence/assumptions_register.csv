@@ -1,0 +1,18 @@
+Item,Current value,Class,Source / model location,What it means,Must be validated before pilot?,Treatment in report
+Coventry FSA-listed food businesses,3015,Observed,FSA open data / Dashboard,"Local screening universe, not demand or SAM.",No,Observed evidence
+UK hospitality & food-service waste,1.1,Published,DEFRA / Dashboard,National sector context; not FreshRoute-attributable waste.,No,Published evidence
+Chilled-food legal maximum,8,Published,FSA / Dashboard,Regulatory limit for relevant chilled foods.,No,Published evidence
+Operating temperature target,5,Planning rule,FSA guidance / Dashboard,FreshRoute pilot operating target.,Yes - confirm product-specific controls,Planning control
+Active SMEs,21,Scenario,Assumptions,Physical decision case; not observed demand.,Yes,Scenario
+Drops per SME per week,2,Scenario,Assumptions,Service-frequency assumption.,Yes,Scenario
+Membership fee,35,Scenario,Assumptions,Planning fee; not willingness-to-pay evidence.,Yes,Scenario
+Delivery fee per drop,25,Scenario,Assumptions,Current price test only.,Yes,Scenario
+Handling cost per drop,3,Scenario,Assumptions,Partner handling allowance.,Yes,Scenario
+Contracted 3PL route-day cost,275,Scenario,Assumptions / 3PL Cost Envelope,Outsourced-route decision case; replace with quotation.,Yes,Scenario
+Physical customer ceiling,21,Derived,Route Feasibility / Dashboard,Maximum active SMEs under the current 3-route configuration at two drops/week.,Yes - real route data may change it,Derived output
+Base route hours,6.35,Derived,Route Feasibility / Dashboard,Modelled route time for 4 supplier pickups + 12 SME drops.,Yes,Derived output
+3PL cost ceiling at £25/drop,279.28,Derived,3PL Cost Envelope / Dashboard,Approximate maximum route-day cost before operating losses at 21 SMEs.,Yes,Derived output
+Required fee for 15% margin,29.76,Derived,3PL Cost Envelope / Dashboard,Model-derived price under the £275 route-day scenario.,Yes - customer price acceptance,Derived output
+Stress-case funding buffer,16874.43,Derived,Forecast / Dashboard,Modelled cash buffer under current stress assumptions.,Yes - quotations and ramp assumptions,Derived output
+Rule,,,,,,
+Observed = directly extracted evidence; Published = external evidence or guidance; Scenario = a planning input that must not be described as observed; Derived = a formula output that is valid only if its inputs hold.,,,,,,

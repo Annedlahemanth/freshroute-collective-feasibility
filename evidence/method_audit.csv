@@ -1,0 +1,12 @@
+Source / database,Search / extraction date,Query / extraction route,Evidence type,Included for,Quality control,Detailed log
+FSA FHRS open data,17 Sep 2026,Coventry local authority open-data file / business universe,Regulator dataset,Market universe / business-type screening,Current local-authority release; not treated as customer demand,Research Log
+Nomis / ONS,Aug-Sep 2026,Coventry UK Business Counts 2025,Official statistics,SME structure,All-sector limitation stated,Research Log
+DEFRA UK Food Security Report,Aug-Sep 2026,Food waste / supply-chain resilience themes,Official statistics,Problem and resilience context,UK-wide aggregate limitation stated,Research Log
+WRAP,Aug-Sep 2026,Hospitality food waste; prevention blueprint,Sector evidence,Waste magnitude / commercial burden,Not treated as proof of FreshRoute causality,Research Log
+Academic literature,Aug-Sep 2026,horizontal logistics collaboration; cold chain; urban consolidation; local food supply chains,Peer-reviewed research,"Mechanisms, barriers, theory, viability",Priority to 2021-2026; older seminal theory retained where necessary,Research Log
+Official competitor pages,Aug-Sep 2026,Booker / Bidfood / Brakes delivery propositions,Company primary sources,Observable competitor features,Not treated as independent market evidence,Research Log
+Method transparency,,,,,,
+Extraction fields,Author/year; geography; study/source type; population/context; key finding; limitation; RQ use; transferability; URL/DOI,,,,,
+Search-count limitation,Exact hit/screened counts were not consistently retained during early exploratory scoping and are not reconstructed retrospectively.,,,,,
+Final audit trail,"The final research log records retained evidence, search/source route, limitation, decision/use and verification date.",,,,,
+Quality rule,Official/regulatory sources establish rules and counts; peer-reviewed papers support mechanisms; company pages support observable competitor features only; scenarios never become observed findings.,,,,,

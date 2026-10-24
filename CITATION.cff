@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use or refer to this project artefact, please cite it as below."
+title: "FreshRoute Collective: Decision-Support Artefact"
+type: software
+authors:
+  - family-names: "Annedla"
+    given-names: "Hemanth Reddy"
+version: "1.0"
+date-released: 2026-10-21
+institution: "Coventry University"
