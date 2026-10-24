@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+__MACOSX/
+
+# Office temporary files
+~$*
+*.tmp
+
+# Local/editor files
+.vscode/
+.idea/
+
+# Python/cache
+__pycache__/
+*.pyc
+
+# Local environment files
+.env
+.env.*
